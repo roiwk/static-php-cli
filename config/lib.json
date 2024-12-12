@@ -322,6 +322,12 @@
             "libmemcachedutil.a"
         ]
     },
+    "libnanomsg": {
+        "source": "libnanomsg",
+        "static-libs-unix": ["libnanomsg.a"],
+        "static-libs-windows": ["libnanomsg.lib"],
+        "headers": ["libnanomsg.h"]
+    },
     "libpng": {
         "source": "libpng",
         "static-libs-unix": [

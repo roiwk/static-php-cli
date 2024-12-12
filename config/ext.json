@@ -407,6 +407,12 @@
             "zlib"
         ]
     },
+    "nano": {
+        "type": "external",
+        "source": "nano",
+        "arg-type": "enable",
+        "lib-depends": ["libnanomsg"]
+    },
     "oci8": {
         "type": "wip",
         "support": {

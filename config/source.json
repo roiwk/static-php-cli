@@ -406,6 +406,16 @@
             "path": "COPYING"
         }
     },
+    "libnanomsg": {
+        "type": "ghtar",
+        "repo": "nanomsg/nanomsg",
+        "provide-pre-built": true,
+        "prefer-stable": true,
+        "license": {
+            "type": "file",
+            "path": "COPYING"
+        }
+    },
     "libpng": {
         "type": "git",
         "url": "https://github.com/glennrp/libpng.git",
@@ -562,6 +572,16 @@
         "url": "https://pecl.php.net/get/msgpack",
         "path": "php-src/ext/msgpack",
         "filename": "msgpack.tgz",
+        "license": {
+            "type": "file",
+            "path": "LICENSE"
+        }
+    },
+    "nano": {
+        "type": "git",
+        "path": "php-src/ext/nano",
+        "rev": "master",
+        "url": "https://github.com/treeleaf/php-nano",
         "license": {
             "type": "file",
             "path": "LICENSE"
