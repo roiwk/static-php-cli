@@ -20,7 +20,7 @@ class libnanomsg extends WindowsLibraryBase
         FileSystem::resetDir($this->source_dir . '\build');
 
         // start build
-        cmd()->cd($this->source_dir)
+        cmd()->cd($this->source_dir . '\build')
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
                 '..'
