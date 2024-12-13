@@ -31,6 +31,10 @@ class libnanomsg extends WindowsLibraryBase
                 '--config Debug '
             )
             ->execWithWrapper(
+                $this->builder->makeSimpleWrapper('ctest'),
+                '-C Debug .'
+            )
+            ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
                 '-DNN_STATIC_LIB=ON ' .
                      "--build . --config Debug --target install"
