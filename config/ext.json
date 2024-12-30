@@ -410,7 +410,7 @@
     "nano": {
         "type": "external",
         "source": "nano",
-        "arg-type": "enable",
+        "arg-type": "with",
         "lib-depends": ["libnanomsg"]
     },
     "oci8": {
