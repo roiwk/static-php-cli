@@ -16,6 +16,7 @@ class libnanomsg extends WindowsLibraryBase
 
     public function build(): void
     {
+
         // reset cmake
         FileSystem::resetDir($this->source_dir . '\build');
 
@@ -36,9 +37,8 @@ class libnanomsg extends WindowsLibraryBase
             )
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
-                     '--build . --config Debug --target install'
+                     '--build . --config Release --target install DESTDIR=' . BUILD_ROOT_PATH
             );
-        FileSystem::copyDir($this->source_dir . '\include\nanomsg', BUILD_INCLUDE_PATH . '\nanomsg');
     }
 
 }
