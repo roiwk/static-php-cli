@@ -37,7 +37,7 @@ class libnanomsg extends WindowsLibraryBase
             )
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
-                     '--build . --config Release --target install DESTDIR=' . BUILD_ROOT_PATH
+                     '--build . --config Release --target install'
             );
     }
 
