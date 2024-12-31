@@ -24,7 +24,13 @@ class libnanomsg extends WindowsLibraryBase
         cmd()->cd($this->source_dir . '\build')
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
-                '..'
+                '-B . ' .
+                '-A x64 ' .
+                "-DCMAKE_TOOLCHAIN_FILE={$this->builder->cmake_toolchain_file} " .
+                '-DCMAKE_BUILD_TYPE=Release ' .
+                '-DBUILD_SHARED_LIBS=OFF ' .
+                '-DBUILD_STATIC_LIBS=ON ' .
+                '-DCMAKE_INSTALL_PREFIX=' . BUILD_ROOT_PATH . ' '
                 )
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
