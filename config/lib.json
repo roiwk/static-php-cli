@@ -352,10 +352,10 @@
     "libnanomsg": {
         "source": "libnanomsg",
         "static-libs-unix": [
-            "libnanomsg.a"
+            "nanomsg.a"
         ],
         "static-libs-windows": [
-            "libnanomsg.lib"
+            "nanomsg.lib"
         ]
     },
     "libpng": {
