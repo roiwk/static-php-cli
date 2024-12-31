@@ -28,12 +28,12 @@ class libnanomsg extends WindowsLibraryBase
                 )
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
-                '--build . ' .
+                '--build "'.BUILD_ROOT_PATH.'" ' .
                 '--config Debug '
             )
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('ctest'),
-                '-C Debug .'
+                '-C Debug "'.BUILD_ROOT_PATH.'"'
             )
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
