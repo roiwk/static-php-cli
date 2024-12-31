@@ -21,7 +21,7 @@ class libnanomsg extends WindowsLibraryBase
         FileSystem::resetDir($this->source_dir . '\build');
 
         // start build
-        cmd()->cd($this->source_dir . '\build')
+        cmd()->cd($this->source_dir)
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
                 '-B . ' .
@@ -33,7 +33,7 @@ class libnanomsg extends WindowsLibraryBase
                 )
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
-                     '--build . --config Release --target install '. '-DCMAKE_INSTALL_PREFIX=' . BUILD_ROOT_PATH . ' '
+                     '--build build --config Release --target install '. '-DCMAKE_INSTALL_PREFIX=' . BUILD_ROOT_PATH . ' '
             );
         copy(BUILD_LIB_PATH . '\libnanomsg.lib', BUILD_LIB_PATH . '\nanomsg.lib');
     }
