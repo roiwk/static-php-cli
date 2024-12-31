@@ -28,16 +28,7 @@ class libnanomsg extends WindowsLibraryBase
                 )
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
-                '--build "'.BUILD_ROOT_PATH.'" ' .
-                '--config Debug '
-            )
-            ->execWithWrapper(
-                $this->builder->makeSimpleWrapper('ctest'),
-                '-C Debug "'.BUILD_ROOT_PATH.'"'
-            )
-            ->execWithWrapper(
-                $this->builder->makeSimpleWrapper('cmake'),
-                     '--build "'.BUILD_ROOT_PATH.'" --config Release --target install'
+                     '--build . --config Release --target install'
             );
     }
 
