@@ -30,6 +30,7 @@ class libnanomsg extends WindowsLibraryBase
                 $this->builder->makeSimpleWrapper('cmake'),
                      '--build . --config Release --target install'
             );
+        copy(BUILD_LIB_PATH . '\libnanomsg.lib', BUILD_LIB_PATH . '\nanomsg.lib');
     }
 
 }

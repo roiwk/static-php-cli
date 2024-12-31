@@ -351,9 +351,12 @@
     },
     "libnanomsg": {
         "source": "libnanomsg",
-        "static-libs-unix": ["libnanomsg.a"],
-        "static-libs-windows": ["libnanomsg.lib"],
-        "headers": ["libnanomsg.h"]
+        "static-libs-unix": [
+            "libnanomsg.a"
+        ],
+        "static-libs-windows": [
+            "libnanomsg.lib"
+        ]
     },
     "libpng": {
         "source": "libpng",
