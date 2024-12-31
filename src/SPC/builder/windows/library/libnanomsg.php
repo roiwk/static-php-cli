@@ -26,7 +26,6 @@ class libnanomsg extends WindowsLibraryBase
                 $this->builder->makeSimpleWrapper('cmake'),
                 '-B . ' .
                 '-A x64 ' .
-                "-DCMAKE_TOOLCHAIN_FILE={$this->builder->cmake_toolchain_file} " .
                 '-DCMAKE_BUILD_TYPE=Release ' .
                 '-DBUILD_SHARED_LIBS=OFF ' .
                 '-DBUILD_STATIC_LIBS=ON ' .
@@ -34,7 +33,7 @@ class libnanomsg extends WindowsLibraryBase
                 )
             ->execWithWrapper(
                 $this->builder->makeSimpleWrapper('cmake'),
-                     '--build . --config Release --target install'
+                     '--build . --config Release --target install '. '-DCMAKE_INSTALL_PREFIX=' . BUILD_ROOT_PATH . ' '
             );
         copy(BUILD_LIB_PATH . '\libnanomsg.lib', BUILD_LIB_PATH . '\nanomsg.lib');
     }
