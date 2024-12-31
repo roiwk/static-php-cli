@@ -9,10 +9,10 @@ use SPC\store\FileSystem;
 /**
  * is a template library class for windows
  */
-class libnanomsg extends WindowsLibraryBase
+class nanomsg extends WindowsLibraryBase
 {
 
-    public const NAME = 'libnanomsg';
+    public const NAME = 'nanomsg';
 
     public function build(): void
     {

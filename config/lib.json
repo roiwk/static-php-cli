@@ -350,7 +350,7 @@
         ]
     },
     "libnanomsg": {
-        "source": "libnanomsg",
+        "source": "nanomsg",
         "static-libs-unix": [
             "nanomsg.a"
         ],

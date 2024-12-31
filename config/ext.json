@@ -409,9 +409,9 @@
     },
     "nano": {
         "type": "external",
-        "source": "nano",
-        "arg-type": "with",
-        "lib-depends": ["libnanomsg"]
+        "source": "ext-nano",
+        "arg-type": "with-prefix",
+        "lib-depends": ["nanomsg"]
     },
     "oci8": {
         "type": "wip",
