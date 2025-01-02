@@ -11,4 +11,8 @@ use SPC\util\CustomExt;
 class nano extends Extension
 {
 
+    public function patchBeforeBuildconf(): bool
+    {
+        return true;
+    }
 }
