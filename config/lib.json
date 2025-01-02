@@ -356,6 +356,9 @@
         ],
         "static-libs-windows": [
             "nanomsg.lib"
+        ],
+        "lib-depends": [
+            "nanomsg"
         ]
     },
     "libpng": {
