@@ -126,6 +126,16 @@
       "path": "LICENSE"
     }
   },
+  "ext-nano": {
+    "type": "git",
+    "path": "php-src/ext/nano",
+    "rev": "master",
+    "url": "https://github.com/treeleaf/php-nano",
+    "license": {
+      "type": "file",
+      "path": "LICENSE"
+    }
+  },
   "ext-rdkafka": {
     "type": "ghtar",
     "repo": "arnaud-lb/php-rdkafka",
@@ -588,16 +598,6 @@
     "url": "https://pecl.php.net/get/memcached",
     "path": "php-src/ext/memcached",
     "filename": "memcached.tgz",
-    "license": {
-      "type": "file",
-      "path": "LICENSE"
-    }
-  },
-  "nano": {
-    "type": "git",
-    "path": "php-src/ext/nano",
-    "rev": "master",
-    "url": "https://github.com/treeleaf/php-nano",
     "license": {
       "type": "file",
       "path": "LICENSE"

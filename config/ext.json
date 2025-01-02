@@ -411,7 +411,9 @@
         "type": "external",
         "source": "ext-nano",
         "arg-type": "with-prefix",
-        "lib-depends": ["nanomsg"]
+        "lib-depends": [
+            "nanomsg"
+        ]
     },
     "oci8": {
         "type": "wip",
