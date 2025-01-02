@@ -458,8 +458,6 @@
   "nanomsg": {
     "type": "ghtar",
     "repo": "nanomsg/nanomsg",
-    "provide-pre-built": true,
-    "prefer-stable": true,
     "license": {
       "type": "file",
       "path": "COPYING"
