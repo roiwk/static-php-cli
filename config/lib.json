@@ -349,7 +349,7 @@
             "libmemcachedutil.a"
         ]
     },
-    "nanomsg": {
+    "nano": {
         "source": "nanomsg",
         "static-libs-unix": [
             "nanomsg.a"
